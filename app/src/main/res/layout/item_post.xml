@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Content"/>
+
+
+    <!-- Likes Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Like Icon -->
+        <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_24"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- Likes Count -->
+        <TextView
+            android:id="@+id/likesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 likes"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Comments Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp">
+
+        <!-- Individual Comment Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!-- Profile Picture of Commenter -->
+            <ImageView
+                android:id="@+id/commenterProfilePicture"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/baseline_favorite_24"
+                android:scaleType="centerCrop"/>
+
+            <!-- Comment Content -->
+            <TextView
+                android:id="@+id/commentContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comment Content"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Add more individual comment items as needed -->
+
+    </LinearLayout>
+
+    <!-- Comment Input -->
+    <EditText
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a comment"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Post Comment Icon -->
+    <ImageView
+        android:id="@+id/postCommentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_chat_bubble_24"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

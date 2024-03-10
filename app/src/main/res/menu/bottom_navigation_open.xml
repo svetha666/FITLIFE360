@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_pin_24"
+        />
+    <item
+        android:id="@+id/nav_likeddiets"
+        android:title="Liked Diets"
+        android:icon="@drawable/baseline_dining_24"
+        />
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item
+        android:id="@+id/nav_likedworkouts"
+        android:title="Liked Workouts"
+        android:icon="@drawable/baseline_favorite_24"
+        />
+    <item
+        android:id="@+id/nav_social"
+        android:title="Social"
+        android:icon="@drawable/baseline_email_24"
+        />
+
+</menu>

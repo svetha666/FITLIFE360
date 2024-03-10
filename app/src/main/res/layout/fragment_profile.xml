@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="75dp"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo">
+        </ImageView>
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="MissingClass"
+            android:background="@drawable/rounded_top_corners">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ProfileFragment">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:text="Profile"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:hint="Weight (kg)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:hint="Height (cm)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/bmiTextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="16dp"
+                android:text="BMI: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/caloriesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginBottom="16dp"
+                android:enabled="false"
+                android:text="Calories Burned: "
+                android:textSize="18sp" />
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+
