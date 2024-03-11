@@ -59,7 +59,8 @@
                 android:layout_marginTop="300dp"
                 android:layout_marginBottom="16dp"
                 android:enabled="false"
-                android:hint="Name" />
+                android:hint="Name"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/ageEditText"
@@ -69,7 +70,8 @@
                 android:layout_marginBottom="16dp"
                 android:enabled="false"
                 android:hint="Age"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/weightEditText"
@@ -79,7 +81,8 @@
                 android:layout_marginBottom="16dp"
                 android:enabled="false"
                 android:hint="Weight (kg)"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/heightEditText"
@@ -89,7 +92,8 @@
                 android:layout_marginBottom="16dp"
                 android:enabled="false"
                 android:hint="Height (cm)"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/bmiTextView"
